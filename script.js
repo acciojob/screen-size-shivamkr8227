@@ -5,5 +5,5 @@ function getdimension(){
 	console.log('Width:',width,'and Height',height);
 	// console.log('Height:${height}');
 }
-window.addEventListner('resize',getdimension);
+window.addEventListener('resize',getdimension);
 getdimension();
