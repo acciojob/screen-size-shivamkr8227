@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+  <head>
+    <title>Screen Size</title>
+  </head>
+  <body>
+    <div id="sizeInfo">
+      <h1>Width: 0 Height: 0</h1>
+    </div>
+    <script>
+      window.addEventListener("resize", function() {
+        const sizeInfo = document.getElementById("sizeInfo");
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        const h1 = sizeInfo.querySelector("h1");
+        h1.textContent = `Width: ${width} Height: ${height}`;
+      });
+    </script>
+  </body>
 </html>
