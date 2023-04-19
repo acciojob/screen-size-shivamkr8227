@@ -14,6 +14,8 @@
         const height = window.innerHeight;
         const h1 = sizeInfo.querySelector("h1");
         h1.textContent = `Width: ${width} and Height: ${height}`;
+		    cy.viewport(1000, 600);
+  cy.wait(1000);
       });
     </script>
   </body>
