@@ -9,10 +9,9 @@
     </div>
     <script>
       window.addEventListener("resize", function() {
-		  let width=1000;
         const sizeInfo = document.getElementById("sizeInfo");
-        width = window.innerWidth;
-        const height = window.innerHeight;
+        let width = window.outerWidth;
+        const height = window.outerHeight;
         const h1 = sizeInfo.querySelector("h1");
         h1.textContent = `Width: ${width} and Height: ${height}`;
 
