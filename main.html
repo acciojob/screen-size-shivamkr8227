@@ -10,8 +10,8 @@
     <script>
       window.addEventListener("resize", function() {
         const sizeInfo = document.getElementById("sizeInfo");
-        let width = window.outerWidth;
-        const height = window.outerHeight;
+        let width = window.innerWidth;
+        const height = window.innerHeight;
         const h1 = sizeInfo.querySelector("h1");
         h1.textContent = `Width: ${width} and Height: ${height}`;
 
